@@ -44,7 +44,7 @@ print(path)
 @app.get("/generate-image/")
 def generate_image(prompt: str):
     image_filename = genimg(prompt)
-    return {"image_filename": "https://ai-artist-api.onrender.com/getimage/"+image_filename}
+    return {"image_url": "https://ai-artist-api.onrender.com/getimage/"+image_filename}
 
 @app.get("/getimage/{file_name}")
 def get_image(file_name: str):
