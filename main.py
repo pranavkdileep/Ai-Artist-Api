@@ -6,7 +6,7 @@ from fastapi.responses import FileResponse
 app = FastAPI()
 
 def genimg(prompt):
-    client = Client("https://jbilcke-hf-image-server-1.hf.space/")
+    client = Client("https://hysts-sd-xl.hf.space/")
     result = client.predict(
         prompt,  # str in 'Prompt' Textbox component
         "Howdy!",  # str in 'Negative prompt' Textbox component
